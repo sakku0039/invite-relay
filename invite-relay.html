@@ -1,0 +1,10 @@
+<!-- invite-relay.html -->
+<script>
+  const qs = location.search;  // ?invitation=...&organization=...
+  location.href =
+    "https://YOUR_TENANT.auth0.com/authorize" + qs +
+    "&client_id=YOUR_CLIENT_ID" +
+    "&response_type=code" +
+    "&scope=openid%20profile%20email" +
+    "&redirect_uri=https%3A%2F%2FYOUR_TENANT.auth0.com%2Fmobile";
+</script>
